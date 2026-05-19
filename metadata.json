@@ -1,0 +1,6 @@
+{
+  "name": "8-Bit Map RPG",
+  "description": "A JRPG inspired game app that overlays 8-bit sprites and RPG mechanics on a real-world map.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}

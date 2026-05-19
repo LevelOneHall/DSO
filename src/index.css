@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .pixel-font {
+    font-family: 'Courier New', Courier, monospace; /* Fallback pixel-ish font */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.map-tiles-pixelated {
+  filter: sepia(0.3) saturate(1.5) contrast(1.2) hue-rotate(15deg) brightness(0.8);
+  image-rendering: pixelated;
+}
+
+/* Day/Night cycle overlays */
+.time-overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  mix-blend-mode: multiply;
+  transition: background-color 2s ease-in-out;
+}
+
+/* Weather overlays */
+.weather-overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+}
+
+.custom-leaflet-icon {
+  background: transparent;
+  border: none;
+}
+
